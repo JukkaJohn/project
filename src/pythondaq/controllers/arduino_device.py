@@ -1,5 +1,5 @@
+# Code from Canvas "uitwerkingen hoofdstuk 5"
 """Classes handling communication with Arduino devices.
-
 Typical usage::
 
     >>> port = list_devices()[0]

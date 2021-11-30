@@ -51,8 +51,23 @@ def currents(voltage):
 @cmd_group.command("scan")
 @click.argument("begin_range", type=click.FloatRange(0, 3.3))
 @click.argument("end_range", type=click.FloatRange(0, 3.3))
-def scan(begin_range, end_range):
-    print(f"current = {device.scan(begin_range, end_range)}")
+@click.option(
+    "-o",
+    "--output",
+    default="",
+    help="determine current",
+    show_default=True,  # show default in help
+)
+@click.option(
+    "-c",
+    "--counts",
+    default=1,
+    help="determine number of measurements per voltage",
+    show_default=True,  # show default in help
+    type=int,
+)
+def scan(begin_range, end_range, output, counts):
+    print(f"current = {device.scan(begin_range, end_range,output,counts)}")
 
 
 if __name__ == "__main__":
