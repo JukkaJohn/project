@@ -1,17 +1,15 @@
 import click
-import pyvisa
+from pythondaq.models.diode_experiment import DiodeExperiment
+
+
+# Open device and print identification
+
+device = DiodeExperiment()
 
 
 @click.group()
 def cmd_group():
     pass
-
-
-port = "ASRL/dev/cu.usbmodem14501::INSTR"
-rm = pyvisa.ResourceManager("@py")
-device = rm.open_resource(
-    port, read_termination="\r\n", write_termination="\n", timeout=1000
-)
 
 
 @cmd_group.command("list")
@@ -22,20 +20,8 @@ device = rm.open_resource(
     help="print connected device",
     show_default=True,  # show default in help
 )
-def list(search):
-    """List VISA devices connected to the system.
-
-    Returns:
-         A list of VISA port names.
-    """
-    if str(search) in str(rm.list_resources()):
-        for item in rm.list_resources():
-            if str(search) in str(item):
-                print("The following devices match your search string:")
-                print("ASRL/dev/cu.usbmodem14501::INSTR")
-    else:
-        print("The following devices are connected to your computer:")
-        print(rm.list_resources())
+def lists(search):
+    print(device.list(search))
 
 
 @cmd_group.command("info")
@@ -46,20 +32,27 @@ def list(search):
     help="print connected device",
     show_default=True,  # show default in help
 )
-def info(search):
+def information(search):
+    device.info(search)
 
-    """List VISA devices connected to the system.
 
-    Returns:
-         A list of VISA port names.
-    """
-    if str(search) in str(rm.list_resources()):
-        for item in rm.list_resources():
-            if str(search) in str(item):
-                print("The following devices match your search string:")
-                print(device.query("*IDN?"))
-    else:
-        print("")
+@cmd_group.command("measure")
+@click.option(
+    "-v",
+    "--voltage",
+    default="1",
+    help="determine current",
+    show_default=True,  # show default in help
+)
+def currents(voltage):
+    print(device.current(voltage))
+
+
+@cmd_group.command("scan")
+@click.argument("begin_range", type=click.FloatRange(0, 3.3))
+@click.argument("end_range", type=click.FloatRange(0, 3.3))
+def scan(begin_range, end_range):
+    print(f"current = {device.scan(begin_range, end_range)}")
 
 
 if __name__ == "__main__":
