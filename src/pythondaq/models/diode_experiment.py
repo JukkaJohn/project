@@ -6,20 +6,20 @@ from statistics import stdev
 
 # Open device and print identification
 
-port = "ASRL/dev/cu.usbmodem14101::INSTR"
-device = ArduinoVISADevice(port)
-
 
 class DiodeExperiment:
     def __init__(self):
-        pass
+        self.I = []
+        self.U_led = []
+
+    def select_device(self, selected_device):
+        port = selected_device
+        self.device = ArduinoVISADevice(port)
 
     def list(self, search):
         """[summary]
-
         Args:
             search ([type]): [description]
-
         Returns:
             [type]: [description]
         """
@@ -35,46 +35,40 @@ class DiodeExperiment:
 
     def info(self, search):
         """[summary]
-
         Args:
             search ([type]): [description]
-
         Returns:
             [type]: [description]
         """
         if str(search) in str(list_devices()):
             for item in list_devices():
                 if str(search) in str(item):
-                    return f"The following devices match your search string:{device.get_identification()}"
+                    return f"The following devices match your search string:{self.device.get_identification()}"
 
         else:
             return "There are no devices"
 
     def current(self, voltage):
         """[summary]
-
         Args:
             voltage ([type]): [description]
-
         Returns:
             [type]: [description]
         """
         I = []
-        device.set_output_voltage(channel=0, value=voltage)
-        volt_ch2 = device.get_input_voltage(channel=2)
+        self.device.set_output_voltage(channel=0, value=voltage)
+        volt_ch2 = self.device.get_input_voltage(channel=2)
         I.append(float(volt_ch2) / 220)
-        device.set_output_value(channel=0, value=0)
+        self.device.set_output_value(channel=0, value=0)
         return I
 
-    def scan(self, begin_range, end_range, output, counts):
+    def scan(self, begin_range, end_range, counts, output):
         """[summary]
-
         Args:
             begin_range ([type]): [description]
             end_range ([type]): [description]
             output ([type]): [description]
             counts ([type]): [description]
-
         Returns:
             [type]: [description]
         """
@@ -89,9 +83,9 @@ class DiodeExperiment:
             currents = []
 
             for i in range(0, counts):
-                device.set_output_voltage(channel=0, value=value)
-                volt_ch1 = device.get_input_voltage(channel=1)
-                volt_ch2 = device.get_input_voltage(channel=2)
+                self.device.set_output_voltage(channel=0, value=value)
+                volt_ch1 = self.device.get_input_voltage(channel=1)
+                volt_ch2 = self.device.get_input_voltage(channel=2)
 
                 mean_U_led += (float(volt_ch1) - float(volt_ch2)) / counts
                 mean_I += (float(volt_ch2) / 220) / counts
@@ -103,15 +97,13 @@ class DiodeExperiment:
 
             U_led.append(mean_U_led)
             I.append(mean_I)
-            print(stdev(voltages), value)
             err_mean_U = stdev(voltages) / np.sqrt(counts)
             err_mean_I = stdev(currents) / np.sqrt(counts)
 
             error_U_led_list.append(err_mean_U)
             error_I_mean_list.append(err_mean_I)
 
-        device.set_output_value(channel=0, value=0)
-
+        self.device.set_output_value(channel=0, value=0)
         if output != "":
             with open(f"{output}.csv", "w") as f:
                 writer = csv.writer(f)
@@ -121,4 +113,16 @@ class DiodeExperiment:
                 ):
                     writer.writerow([u, i, err_u, err_i])
 
+        self.I = I
+        self.U_led = U_led
         return U_led, I, error_I_mean_list, error_U_led_list
+
+    def save(self, output):
+        self.I
+        self.U_led
+        if output != "":
+            with open(f"{output}.csv", "w") as f:
+                writer = csv.writer(f)
+                writer.writerow(["U_LED", "I"])
+                for u, i in zip(self.U_led, self.I):
+                    writer.writerow([u, i])

@@ -1,357 +1,0 @@
-Script started on Thu Nov 25 09:51:56 2021
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hpython hello.py Alice[19Dvisa-shell         [8D[13Dvisa list   [9Dpyvisa-shell -b py[18Dvisa              [14Dconda create -n daq python=3.9[14Denvsmallangle python=3.9[34Dactivate easystat                 [17D[17Dcreate -n envsmallangle python=3.9[24Ddaq[10P[11C          [10D[30Dvisa                          [26Dpyvisa-shell -b py [90my[39m [39m [90mpy[39m[39m [39m [90m py[39m [39m [39m [39m [90mb py[39m [39m [39m [39m [39m [90m [39m [39m [90ml [39m [39m [39m [90mll [39m [39m [39m [39m [90mell [39m [39m [39m [39m [39m [90mhell [39m [39m [39m [39m [39m [39m [90mshell [39m [39m [39m [39m [39m [39m [39m [90m-shell [39m [39m [39m [39m [39m [39m [39m [39m [8D[90ma-shell [39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[90msa-shell [39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90misa-shell [39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mthon[39mp [39m [39m [39m [39m p[90mython[39m [39m [39m [39m [39m [39m //usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/d [K[Kiiode.py[?2004l
-Usage: diode.py [OPTIONS] COMMAND [ARGS]...
-
-Options:
-  --help  Show this message and exit.
-
-Commands:
-  list
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py[K list[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 17
-    )
-    ^
-SyntaxError: unmatched ')'
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K usbmodem[?2004l
-Usage: diode.py list [OPTIONS]
-Try 'diode.py list --help' for help.
-
-Error: Got unexpected extra argument (usbmodem)
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list usbmodem[K[?2004l
-Traceback (most recent call last):
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 14, in <module>
-    default=str(bla),
-NameError: name 'bla' is not defined
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list usbmodem[K[?2004l
-Usage: diode.py list [OPTIONS]
-Try 'diode.py list --help' for help.
-
-Error: Got unexpected extra argument (usbmodem)
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [8D[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[1C[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[1Cbla[?2004l
-Usage: diode.py list [OPTIONS]
-Try 'diode.py list --help' for help.
-
-Error: Got unexpected extra argument (bla)
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m[39m [39m [39m [39m [?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K [90mbla[39m[39mb[39ml[39ma[?2004l
-Usage: diode.py list [OPTIONS]
-Try 'diode.py list --help' for help.
-
-Error: Got unexpected extra argument (bla)
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m[39m [39m [39m [39m [?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K [90mt[39m [39m [90mst[39m [39m [39m [90mist[39m [39m [39m [39m [90mlist[39m[39mb[39m [39m [39m la[?2004l
-Usage: diode.py [OPTIONS] COMMAND [ARGS]...
-Try 'diode.py --help' for help.
-
-Error: No such command 'bla'.
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m[39ml[39m [39m [39m is   [90m bla[39m[39m [39ml[39m [39m [90mist[39m[39mi[39ms[39mt [90mbla[39m[39m-[39m [39m -search bla[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list --search bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39mu[39m [39m sbmodem[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list --search usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90mh usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mch usbmodem[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mrch usbmodem[39m[12D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90march usbmodem[39m[13D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[90mearch usbmodem[39m[14D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90msearch usbmodem[39m[15D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[90m-search usbmodem[39m[16D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90m--search usbmodem[39m[17D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[1C[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[1C-[90m-search usbmodem[39m[16D[39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D bla[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m [39m [39m [39m [39m [90ms bla[39m [39m [39m [39m [39m [39m [90m-s bla[39m[39m [39m [39m [39m [39m [39m [90m -s bla[39m[39m [39m [39m [39m [39m [39m [39m [?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K [90m-s bla[39m[39m-[39ms[39m [39mb[39ml[39ma[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h//usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/d [K[Kiiode.py[?2004l
-Usage: diode.py [OPTIONS] COMMAND [ARGS]...
-
-Options:
-  --help  Show this message and exit.
-
-Commands:
-  list
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py[K [90mlist -s bla[39m[11D[39ml[39mi[39ms[39mt[39m [39m [39m [39m [39m [39m [39m [?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K [90m-s bla[39m[39m-[39ms[39m [39mb[39ml[39ma[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-Traceback (most recent call last):
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 36, in <module>
-    cmd_group()
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
-    return self.main(*args, **kwargs)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1053, in main
-    rv = self.invoke(ctx)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 754, in invoke
-    return __callback(*args, **kwargs)
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 29, in list
-    if str(search) in devices[i]:
-IndexError: list index out of range
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-Traceback (most recent call last):
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 36, in <module>
-    cmd_group()
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1128, in __call__
-    return self.main(*args, **kwargs)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1053, in main
-    rv = self.invoke(ctx)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1659, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 1395, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/usr/local/anaconda3/envs/daq/lib/python3.9/site-packages/click/core.py", line 754, in invoke
-    return __callback(*args, **kwargs)
-  File "/Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py", line 29, in list
-    if str(search) in devices[i]:
-IndexError: list index out of range
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K[?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m [39m [39m [39m [39m [90ms bla[39m [39m [39m [39m [39m [39m [90m-s bla[39m[39m [39m [39m [39m [39m [39m [90m -s bla[39m[39m [39m [39m [39m [39m [39m [39m [?2004l
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-bla
-[('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-bla
-rm.list_resources()
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K [90m-s bla[39m[39m-[39ms[39m [39ms[39m [39m ubmodem[?2004l
-submodem
-rm.list_resources()
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s submodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90mubmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90msubmodem[39m[8D[39mu[39m [39m [39m [39m [39m [39m [39m sbmodem[?2004l
-usbmodem
-rm.list_resources()
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s usbmodem[K[?2004l
-usbmodem
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90ms usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90m-s usbmodem[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90m -s usbmodem[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[?2004l
-bla
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-bla
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR') bla
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR') bla
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR') bla
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-bla bla
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-bla bla
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/pythondaq.views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR') bla
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hpp[90mython[39mp[39me[39m [39m [39m [39m o p p[90mython[39m [39m [39m [39m [39m [39m dd[90mir[39md[39mi[39mode[?2004l
-zsh: command not found: diode
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hpp[90mython[39mp[39mo[39m [39m [39m [39m [90metry new --src easystat[39m[23D[39me[39mt[39mr[39my[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[90m new --src easystat[39m[19D[39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D [90m new --src easystat[39m[19D[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mbout[39m[39md[39m [39m [39m d click[?2004l
-The following packages are already present in the pyproject.toml and will be skipped:
-
-  • [36mclick[0m
-
-If you want to update it to the latest compatible version, you can use `poetry update package`.
-If you prefer to upgrade it to the latest available version, you can use `poetry add package@latest`.
-
-Nothing to add.
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hpp[90moetry add click[39m[15Dp[39mo[39me[39mt[39mr[39my[39m [39mi[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mnit --no-interaction[39m[20D[39mn[39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18Dtall[?2004l
-[34mInstalling dependencies from lock file[0m
-
-No dependencies to install or update
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hdd[90miode[39md[39mi[39mo[39md[39me[?2004l
-zsh: command not found: diode
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hdd[90miode[39md[39mi[39mo[39md[39me list[?2004l
-zsh: command not found: diode
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h//usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py[?2004l
-Usage: diode.py [OPTIONS] COMMAND [ARGS]...
-
-Options:
-  --help  Show this message and exit.
-
-Commands:
-  list
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py li [K[Kssts [K[A[124C[K[1B[K[A[124C  li [K[Ksst[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[] bla
-[]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[] ASRL
-[]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[?2004l
-[]
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K -s usbmodem[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90ms usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90m-s usbmodem[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90m -s usbmodem[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K [90m-s usbmodem[39m[11D[39m-[39ms[39m [39mb[39m [39m [39m [39m [39m [39m [39m la[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s bla[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39m [39m [39m [90m bla[39m[39mu[39m [39m [39m sbmodem[8D bla     [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39mu[39m [39m [90msbmodem[39m[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90ms usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90m-s usbmodem[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C-[90ms usbmodem[39m[10D[39ms[39m [39mb[39m [39m [39m [39m [39m [39m [39m [90mla[39m[39ml[39ma[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39mu[39m [39m [90msbmodem[39m[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-usbmodem
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90ms usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90m-s usbmodem[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[?2004l
-2
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C[90m [39m[39m [?2004l
-2
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K -[90ms usbmodem[39m[10D[39ms[39m [39mu[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-usbmodem
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m         /usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/c/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39mb[39m [39m [39m [39m [39m [39m [39m [90mla[39m[39ml[39ma[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s bla[K [90ma[39m [39m [90mla[39m [39m [39m [90mbla[39m[39mu[39m [39m [90msbmodem[39m[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [8D[?2004l
-Error: Option '-s' requires an argument.
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s[K[1C[90m [39m [39m [90ms [39m[39ms[39m [90m [39m [39m [90ms [39m [39m [39m [90m-s [39m[39ml[39m [39m isy t[?2004l
-Usage: diode.py list [OPTIONS]
-Try 'diode.py list --help' for help.
-
-Error: Got unexpected extra argument (list)
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list list[K [90mt[39m [39m [90mst[39m [39m [39m [90mist[39m [39m [39m [39m [90mlist[39m[1C[39m [39m [39m [39m [?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C-[90ms [39m[39ms[39m u[90msbmodem[39m[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-()
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-()
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K[?2004l
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s usbmodem[K [90mm[39m [39m [90mem[39m [39m [39m [90mdem[39m [39m [39m [39m [90modem[39m [39m [39m [39m [39m [90mmodem[39m [39m [39m [39m [39m [39m [90mbmodem[39m [39m [39m [39m [39m [39m [39m [90msbmodem[39m [39m [39m [39m [39m [39m [39m [39m [8D[90musbmodem[39m[8D[39m [39m [39m [39m [39m [39m [39m [39m [9D[90m usbmodem[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90ms usbmodem[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90m-s usbmodem[39m[11D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list[K[1C-[90ms usbmodem[39m[10D[39ms[39m [39mh[39m [39m [39m [39m [39m [39m [39m gdeouwgcduiwqgc[?2004l
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s hgdeouwgcduiwqgc[K[?2004l
-The following devices are connected to your computer:
-('ASRL/dev/cu.BLTH::INSTR', 'ASRL/dev/cu.URT1::INSTR', 'ASRL/dev/cu.URT2::INSTR', 'ASRL/dev/cu.Bluetooth-Incoming-Port::INSTR', 'ASRL/dev/cu.usbmodem14501::INSTR')
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004h/usr/local/anaconda3/envs/daq/bin/python /Users/jukkajohn/src/pythondaq/views/diode.py list -s hgdeouwgcduiwqgc[K [90mc[39m [39m [90mgc[39m [39m [39m [90mqgc[39m [39m [39m [39m [90mwqgc[39m [39m [39m [39m [39m [90miwqgc[39m [39m [39m [39m [39m [39m [90muiwqgc[39m [39m [39m [39m [39m [39m [39m [90mduiwqgc[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mcduiwqgc[39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[90mgcduiwqgc[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90mwgcduiwqgc[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90muwgcduiwqgc[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mouwgcduiwqgc[39m[12D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90meouwgcduiwqgc[39m[13D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[90mdeouwgcduiwqgc[39m[14D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90mgdeouwgcduiwqgc[39m[15D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[90mhgdeouwgcduiwqgc[39m[16D[39mu[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[90msbmodem[39m[39ms[39mb[39mm[39mo[39md[39me[39mm[?2004l
-The following devices match your search string:
-ASRL/dev/cu.usbmodem14501::INSTR
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hdd[90miode list[39m[9Dd[39mi[39mo[39md[39me     [39m [39m [39m [39m [39m [10Dpp[90moetry install[39m[13Dp[39mop [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13Dp[90moetry install[39m[13D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14Dcc[90monda create -n daq python=3.9[39m[29Dc[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D [90mdownloads[39m[9D[39mj[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mukkajohn[39m[8D[39mu[39mk[39mk[39m [39m [39m [39m [39m a[90mjohn[39m[39mj[39mo[39mh[39mn[?2004l
-cd: no such file or directory: jukkajohn
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hcc[90md jukkajohn[39m[11Dc[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per ~ % [K[?2004hpp[90moetry install[39m[13Dp[39mo[39me[39mt[39mr[39my[39m [39mi[39mn[39ms[39mt[39ma[39ml[39ml[?2004l
-
-  [31;1mRuntimeError[0m
-
-  [1mPoetry could not find a pyproject.toml file in /Users/jukkajohn or its parents[0m
-
-  at [32m.local/pipx/venvs/poetry/lib/python3.10/site-packages/poetry/core/factory.py[0m:[1m369[0m in [36mlocate[0m
-      [39;2m365[0m[39;2m│[0m [39m            [0m[35;1mif [0m[39mpoetry_file[0m[39;2m.[0m[39mexists[0m[39;2m():[0m
-      [39;2m366[0m[39;2m│[0m [39m                [0m[35;1mreturn [0m[39mpoetry_file[0m
-      [39;2m367[0m[39;2m│[0m 
-      [39;2m368[0m[39;2m│[0m [39m        [0m[35;1melse[0m[39;2m:[0m
-    [31;1m→[0m [39;1m369[0m[39;2m│[0m [39m            [0m[35;1mraise [0m[39;1mRuntimeError[0m[39;2m([0m
-      [39;2m370[0m[39;2m│[0m [39m                [0m[33;1m"Poetry could not find a pyproject.toml file in {} or its parents"[0m[39;2m.[0m[39;1mformat[0m[39;2m([0m
-      [39;2m371[0m[39;2m│[0m [39m                    cwd[0m
-      [39;2m372[0m[39;2m│[0m [39m                [0m[39;2m)[0m
-      [39;2m373[0m[39;2m│[0m [39m            [0m[39;2m)[0m
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per ~ % [K[?2004h[39m [39m [39m [39m [39m [39m [39m [39m [39m [28D [90mdownloads[39m[9D[39mj[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mukkajohn[39m[8D[39mu[39mk[39mk[39m [39m [39m [39m [39m a[90mjohn[39m[39mj[39mo[39mh[39mn[?2004l
-cd: no such file or directory: jukkajohn
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per src % [K[?2004hcc[90md jukkajohn[39m[11Dc[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per ~ % [K[?2004hpp[90moetry install[39m[13Dp[39mo[39me[39mt[39mr[39my[39m [39mi[39mn[39ms[39mt[39ma[39ml[39ml[?2004l
-
-  [31;1mRuntimeError[0m
-
-  [1mPoetry could not find a pyproject.toml file in /Users/jukkajohn or its parents[0m
-
-  at [32m.local/pipx/venvs/poetry/lib/python3.10/site-packages/poetry/core/factory.py[0m:[1m369[0m in [36mlocate[0m
-      [39;2m365[0m[39;2m│[0m [39m            [0m[35;1mif [0m[39mpoetry_file[0m[39;2m.[0m[39mexists[0m[39;2m():[0m
-      [39;2m366[0m[39;2m│[0m [39m                [0m[35;1mreturn [0m[39mpoetry_file[0m
-      [39;2m367[0m[39;2m│[0m 
-      [39;2m368[0m[39;2m│[0m [39m        [0m[35;1melse[0m[39;2m:[0m
-    [31;1m→[0m [39;1m369[0m[39;2m│[0m [39m            [0m[35;1mraise [0m[39;1mRuntimeError[0m[39;2m([0m
-      [39;2m370[0m[39;2m│[0m [39m                [0m[33;1m"Poetry could not find a pyproject.toml file in {} or its parents"[0m[39;2m.[0m[39;1mformat[0m[39;2m([0m
-      [39;2m371[0m[39;2m│[0m [39m                    cwd[0m
-      [39;2m372[0m[39;2m│[0m [39m                [0m[39;2m)[0m
-      [39;2m373[0m[39;2m│[0m [39m            [0m[39;2m)[0m
-[1m[7m%[27m[1m[0m                                                                                                                             [0m[27m[24m[Jjukkajohn@MacBook-Pro-van-Per ~ % [K[?2004h

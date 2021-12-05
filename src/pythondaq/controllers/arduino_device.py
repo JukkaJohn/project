@@ -9,7 +9,12 @@ Typical usage::
     >>> value = device.get_input_value(channel=2)
 """
 
-import pyvisa
+# import pyvisa
+
+try:
+    from nsp2visasim import sim_pyvisa as pyvisa
+except ModuleNotFoundError:
+    import pyvisa
 
 
 class ArduinoVISADevice:
@@ -44,19 +49,6 @@ class ArduinoVISADevice:
         """
         return self.device.query(f"OUT:CH{channel} {value}")
 
-    def get_output_value(self, channel):
-        """Get the value previously set for a DAC output channel.
-
-        Args:
-            channel (int): The output channel. Channel numbering starts at 0.
-
-        Returns:
-            The integer value previously set for the channel (range 0 - 1023),
-            where 0 is the device's GND and 1023 is the device's operating
-            voltage (3.3 V).
-        """
-        return self.device.query(f"OUT:CH{channel}?")
-
     def set_output_voltage(self, channel, value):
         """Set the voltage for a DAC output channel.
 
@@ -85,19 +77,6 @@ class ArduinoVISADevice:
             The float value previously set for the channel voltage (range 0 - 3.3 V).
         """
         return self.device.query(f"OUT:CH{channel}:VOLT?")
-
-    def get_input_value(self, channel):
-        """Get the value measured on an ADC input channel.
-
-        Args:
-            channel (int): The input channel. Channel numbering starts at 0.
-
-        Returns:
-            The integer value measured for the channel (range 0 - 1023),
-            where 0 is the device's GND and 1023 is the device's operating
-            voltage (3.3 V).
-        """
-        return self.device.query(f"MEAS:CH{channel}?")
 
     def get_input_voltage(self, channel):
         """Get the voltage measured on an ADC input channel.
