@@ -9,12 +9,12 @@ Typical usage::
     >>> value = device.get_input_value(channel=2)
 """
 
-import pyvisa
+# import pyvisa
 
-# try:
-#     from nsp2visasim import sim_pyvisa as pyvisa
-# except ModuleNotFoundError:
-#     import pyvisa
+try:
+    from nsp2visasim import sim_pyvisa as pyvisa
+except ModuleNotFoundError:
+    import pyvisa
 
 
 class ArduinoVISADevice:
@@ -93,8 +93,8 @@ class ArduinoVISADevice:
         return self.device.query(f"MEAS:CH{channel}:VOLT?")
 
     def closes(self):
-        self.rm.close()
         print("bla")
+        self.device.close()
 
 
 def list_devices():

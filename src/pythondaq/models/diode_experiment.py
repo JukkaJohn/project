@@ -2,20 +2,20 @@ from pythondaq.controllers.arduino_device import list_devices, ArduinoVISADevice
 import numpy as np
 import csv
 from statistics import stdev
+import time
+import threading
 
 
 # Open device and print identification
 
 
 class DiodeExperiment:
-    def __init__(self):
+    def __init__(self, port):
+        self.device = ArduinoVISADevice(port)
+        self.port = port
+
         self.I = []
         self.U_led = []
-        self.port = ""
-
-    def select_device(self, selected_device):
-        self.port = selected_device
-        return self.port
 
     def list(self, search):
         """[summary]
@@ -63,8 +63,11 @@ class DiodeExperiment:
         self.device.set_output_value(channel=0, value=0)
         return I
 
-    def scan(self, begin_range, end_range, counts, output):
-        self.device = ArduinoVISADevice(self.port)
+    def close(self):
+        self.device.closes()
+
+    def scan(self, begin_range, end_range, counts):
+
         """[summary]
         Args:
             begin_range ([type]): [description]
@@ -74,8 +77,8 @@ class DiodeExperiment:
         Returns:
             [type]: [description]
         """
-        U_led = []
-        I = []
+        self.U_led = []
+        self.I = []
         error_I_mean_list = []
         error_U_led_list = []
         for value in np.arange(begin_range, end_range, 0.03):
@@ -97,8 +100,8 @@ class DiodeExperiment:
                 i += 1
                 # print(value, volt_ch1, volt_ch2)
 
-            U_led.append(mean_U_led)
-            I.append(mean_I)
+            self.U_led.append(mean_U_led)
+            self.I.append(mean_I)
             err_mean_U = stdev(voltages) / np.sqrt(counts)
             err_mean_I = stdev(currents) / np.sqrt(counts)
 
@@ -106,22 +109,10 @@ class DiodeExperiment:
             error_I_mean_list.append(err_mean_I)
 
         self.device.set_output_value(channel=0, value=0)
-        if output != "":
-            with open(f"{output}.csv", "w") as f:
-                writer = csv.writer(f)
-                writer.writerow(["U_LED", "I", "err_u", "err_I"])
-                for u, i, err_u, err_i in zip(
-                    U_led, I, error_U_led_list, error_I_mean_list
-                ):
-                    writer.writerow([u, i, err_u, err_i])
-
-        self.I = I
-        self.U_led = U_led
-        self.device.closes
-        return U_led, I, error_I_mean_list, error_U_led_list
+        return self.U_led, self.I, error_I_mean_list, error_U_led_list
 
     def save(self, output):
-        self.device = ArduinoVISADevice(self.port)
+
         self.I
         self.U_led
         if output != "":

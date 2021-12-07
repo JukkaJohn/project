@@ -1,23 +1,22 @@
 import sys
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 import numpy as np
 import pyqtgraph as pg
 from pythondaq.controllers.arduino_device import list_devices
 from pythondaq.models.diode_experiment import DiodeExperiment
-
+import time
 
 pg.setConfigOption("background", "w")
 pg.setConfigOption("foreground", "k")
-device = DiodeExperiment()
 
 
 class UserInterface(QtWidgets.QMainWindow):
     def __init__(self):
+        self.device = None
 
         # roep de __init__() aan van de parent class
         super().__init__()
-        conncted_devices = list_devices()
-
+        connected_devices = list_devices()
         # hierbinnen maak je een layout en hang je andere widgets
         central_widget = QtWidgets.QWidget()
         self.setCentralWidget(central_widget)
@@ -83,19 +82,20 @@ class UserInterface(QtWidgets.QMainWindow):
         vbox.addLayout(self.formlayout)
 
         self.devices = QtWidgets.QComboBox()
-        self.devices.addItems(conncted_devices)
+        self.devices.addItems(connected_devices)
         self.devices.currentTextChanged.connect(self.open)
         hbox.addWidget(self.devices)
         self.devices.setFixedWidth(120)
 
     def open(self):
-        selected_device = self.devices.currentText()
-        print(selected_device)
-        device.select_device(selected_device)
+        if self.device != None:
+            self.device.close()
+        self.device = DiodeExperiment(self.devices.currentText())
+        return self.device
 
     def save_data(self):
         filename, _ = QtWidgets.QFileDialog.getSaveFileName(filter="CSV files (*.csv)")
-        device.save(filename)
+        self.device.save(filename)
 
     def change(self):
         start_value = self.start_button.value()
@@ -105,29 +105,33 @@ class UserInterface(QtWidgets.QMainWindow):
         return start_value, end_value, step_value
 
     def measure(self):
+        self.device = DiodeExperiment(self.devices.currentText())
         self.plot_widget.clear()
-        U_led, _, _, _ = device.scan(
+        self.U_led, _, _, _ = self.device.scan(
             self.start_button.value(),
             self.end_button.value(),
             self.point_button.value(),
-            "",
         )
-        _, I, _, _ = device.scan(
+        _, self.I, _, _ = self.device.scan(
             self.start_button.value(),
             self.end_button.value(),
             self.point_button.value(),
-            "",
         )
-        print(U_led)
-        print(I)
-        print(len(U_led))
-        self.plot_widget.plot(U_led, I, symbol=None, pen={"color": "k", "width": 5})
+        print(self.U_led)
+        print(self.I)
+        print(len(self.U_led))
+        self.plot_widget.plot(
+            self.device.U_led,
+            self.device.I,
+            symbol=None,
+            pen={"color": "k", "width": 5},
+        )
+
         self.plot_widget.setLabel("left", "current(I)")
         self.plot_widget.setLabel("bottom", "voltage(U)")
 
     def shut(self):
         self.close()
-        
 
 
 def main():
