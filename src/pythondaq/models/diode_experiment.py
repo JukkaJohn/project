@@ -11,10 +11,11 @@ class DiodeExperiment:
     def __init__(self):
         self.I = []
         self.U_led = []
+        self.port = ""
 
     def select_device(self, selected_device):
-        port = selected_device
-        self.device = ArduinoVISADevice(port)
+        self.port = selected_device
+        return self.port
 
     def list(self, search):
         """[summary]
@@ -63,6 +64,7 @@ class DiodeExperiment:
         return I
 
     def scan(self, begin_range, end_range, counts, output):
+        self.device = ArduinoVISADevice(self.port)
         """[summary]
         Args:
             begin_range ([type]): [description]
@@ -115,9 +117,11 @@ class DiodeExperiment:
 
         self.I = I
         self.U_led = U_led
+        self.device.closes
         return U_led, I, error_I_mean_list, error_U_led_list
 
     def save(self, output):
+        self.device = ArduinoVISADevice(self.port)
         self.I
         self.U_led
         if output != "":

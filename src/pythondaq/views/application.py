@@ -82,17 +82,16 @@ class UserInterface(QtWidgets.QMainWindow):
         self.formlayout.addWidget(self.save)
         vbox.addLayout(self.formlayout)
 
-        self.device = QtWidgets.QComboBox()
-        self.device.addItems(conncted_devices)
-        self.device.currentIndexChanged(self.open())
-        hbox.addWidget(self.device)
-        self.device.setFixedWidth(120)
-
-        self.U_led = None
-        self.I = None
+        self.devices = QtWidgets.QComboBox()
+        self.devices.addItems(conncted_devices)
+        self.devices.currentTextChanged.connect(self.open)
+        hbox.addWidget(self.devices)
+        self.devices.setFixedWidth(120)
 
     def open(self):
-        device.select_device(self.device.currentIndex())
+        selected_device = self.devices.currentText()
+        print(selected_device)
+        device.select_device(selected_device)
 
     def save_data(self):
         filename, _ = QtWidgets.QFileDialog.getSaveFileName(filter="CSV files (*.csv)")
@@ -128,6 +127,7 @@ class UserInterface(QtWidgets.QMainWindow):
 
     def shut(self):
         self.close()
+        
 
 
 def main():

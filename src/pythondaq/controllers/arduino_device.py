@@ -9,12 +9,12 @@ Typical usage::
     >>> value = device.get_input_value(channel=2)
 """
 
-# import pyvisa
+import pyvisa
 
-try:
-    from nsp2visasim import sim_pyvisa as pyvisa
-except ModuleNotFoundError:
-    import pyvisa
+# try:
+#     from nsp2visasim import sim_pyvisa as pyvisa
+# except ModuleNotFoundError:
+#     import pyvisa
 
 
 class ArduinoVISADevice:
@@ -27,8 +27,8 @@ class ArduinoVISADevice:
             port (str): the name of the VISA port the device is connected to.
 
         """
-        rm = pyvisa.ResourceManager("@py")
-        self.device = rm.open_resource(
+        self.rm = pyvisa.ResourceManager("@py")
+        self.device = self.rm.open_resource(
             port, read_termination="\r\n", write_termination="\n", timeout=1000
         )
 
@@ -91,6 +91,10 @@ class ArduinoVISADevice:
             The float value measured for the channel voltage (range 0 - 3.3 V).
         """
         return self.device.query(f"MEAS:CH{channel}:VOLT?")
+
+    def closes(self):
+        self.rm.close()
+        print("bla")
 
 
 def list_devices():
