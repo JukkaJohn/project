@@ -85,7 +85,7 @@ class UserInterface(QtWidgets.QMainWindow):
         self.point_button = QtWidgets.QSpinBox()
         hbox.addWidget(self.point_button)
         self.point_button.valueChanged.connect(self.change)
-        self.point_button.setMinimum(2)
+        self.point_button.setMinimum(1)
         self.point_button.setMaximum(10)
         self.point_button.setFixedWidth(60)
 
@@ -167,7 +167,7 @@ class UserInterface(QtWidgets.QMainWindow):
         return start_value, end_value, step_value
 
     def start_scan(self):
-        """This function calls another function, which excecutes measurements and gives data.
+        """This funcion calls another function, which excecutes measurements and gives data.
         """
         self.device = DiodeExperiment(self.devices.currentText())
         self.device.start_scan(
