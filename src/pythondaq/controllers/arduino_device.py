@@ -18,7 +18,7 @@ import pyvisa
 
 
 class ArduinoVISADevice:
-    """An Arduino device compatible with the VISA standard."""
+    """An Arduino device compatile with the VISA standard."""
 
     def __init__(self, port):
         """Instantiate the device.
