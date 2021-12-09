@@ -21,6 +21,8 @@ class DiodeExperiment:
 
         self.I = []
         self.U_led = []
+        self.error_I_mean_list = []
+        self.error_U_led_list = []
 
     # def list(self, search):
     #     """[summary]
@@ -92,8 +94,8 @@ class DiodeExperiment:
         """
         self.U_led = []
         self.I = []
-        error_I_mean_list = []
-        error_U_led_list = []
+        self.error_I_mean_list = []
+        self.error_U_led_list = []
         # loops over the range of voltages
         for value in np.arange(begin_range, end_range, 0.03):
             mean_U_led = 0
@@ -122,11 +124,11 @@ class DiodeExperiment:
             err_mean_U = stdev(voltages) / np.sqrt(counts)
             err_mean_I = stdev(currents) / np.sqrt(counts)
 
-            error_U_led_list.append(err_mean_U)
-            error_I_mean_list.append(err_mean_I)
+            self.error_U_led_list.append(err_mean_U)
+            self.error_I_mean_list.append(err_mean_I)
         # stops measurements
         self.device.set_output_value(channel=0, value=0)
-        return self.U_led, self.I, error_I_mean_list, error_U_led_list
+        return self.U_led, self.I, self.error_U_led_list, self.error_I_mean_list
 
     def save(self, output):
         """Saves the data from the measurements
@@ -137,6 +139,8 @@ class DiodeExperiment:
         if output != "":
             with open(f"{output}", "w") as f:
                 writer = csv.writer(f)
-                writer.writerow(["U_LED", "I"])
-                for u, i in zip(self.U_led, self.I):
-                    writer.writerow([u, i])
+                writer.writerow(["U_LED", "I", "err_u", "err_I"])
+                for u, i, err_u, err_i in zip(
+                    self.U_led, self.I, self.error_U_led_list, self.error_I_mean_list
+                ):
+                    writer.writerow([u, i, err_u, err_i])

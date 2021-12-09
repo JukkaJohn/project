@@ -4,7 +4,6 @@ import numpy as np
 import pyqtgraph as pg
 from pythondaq.controllers.arduino_device import list_devices
 from pythondaq.models.diode_experiment import DiodeExperiment
-import time
 
 pg.setConfigOption("background", "w")
 pg.setConfigOption("foreground", "k")
@@ -154,9 +153,18 @@ class UserInterface(QtWidgets.QMainWindow):
         self.plot_widget.plot(
             self.device.U_led, self.device.I, symbol="o", symbolSize=5, pen=None,
         )
-
         self.plot_widget.setLabel("left", "current(I)")
         self.plot_widget.setLabel("bottom", "voltage(U)")
+
+        width = 2 * np.array(self.device.error_U_led_list)
+        print(width)
+        height = 2 * np.array(self.device.error_I_mean_list)
+
+        # plotting errors
+        x = np.array(self.device.U_led)
+        y = np.array(self.device.I)
+        error_bars = pg.ErrorBarItem(x=x, y=y, width=width, height=height)
+        self.plot_widget.addItem(error_bars)
 
     def shut(self):
         """Closes the window
