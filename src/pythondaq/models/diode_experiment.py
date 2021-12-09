@@ -115,7 +115,7 @@ class DiodeExperiment:
                 mean_I += (float(volt_ch2) / 220) / counts
 
                 voltages.append(float(volt_ch1) - float(volt_ch2))
-                currents.append(float(volt_ch2) / 220)
+                currents.append(float(vot_ch2) / 220)
                 i += 1
 
             self.U_led.append(mean_U_led)
