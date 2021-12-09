@@ -55,7 +55,7 @@ class UserInterface(QtWidgets.QMainWindow):
         self.point_button = QtWidgets.QSpinBox()
         hbox.addWidget(self.point_button)
         self.point_button.valueChanged.connect(self.change)
-        self.point_button.setMinimum(2)
+        self.point_button.setMinimum(1)
         self.point_button.setMaximum(10)
         self.point_button.setFixedWidth(60)
 
