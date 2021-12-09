@@ -32,8 +32,38 @@ class UserInterface(QtWidgets.QMainWindow):
         hbox = QtWidgets.QHBoxLayout()
         vbox.addLayout(hbox)
 
-        self.plot_widget = pg.PlotWidget()
-        hbox.addWidget(self.plot_widget)
+        self.tabs = QtWidgets.QTabWidget()
+        self.tabs.resize(300, 200)
+
+        tab1 = QtWidgets.QWidget()
+        tab2 = QtWidgets.QWidget()
+        tab3 = QtWidgets.QWidget()
+
+        # Add tabs
+        self.tabs.addTab(tab1, "Tab 1")
+        self.tabs.addTab(tab2, "Tab 2")
+        self.tabs.addTab(tab3, "Tab 3")
+
+        tab1_layout = QtWidgets.QVBoxLayout()
+        self.plot_widget_UI = pg.PlotWidget()
+        tab1_layout.addWidget(self.plot_widget_UI)
+        tab1.setLayout(tab1_layout)
+
+        tab2_layout = QtWidgets.QVBoxLayout()
+        self.plot_widget_PR = pg.PlotWidget()
+        tab2_layout.addWidget(self.plot_widget_PR)
+        tab2.setLayout(tab2_layout)
+
+        tab3_layout = QtWidgets.QVBoxLayout()
+        self.plot_widget_UU = pg.PlotWidget()
+        tab3_layout.addWidget(self.plot_widget_UU)
+        tab3.setLayout(tab3_layout)
+
+        # Set the layout
+        # layout = QtWidgets.QVBoxLayout()
+        # layout.addWidget(self.tabs)
+        # self.setLayout(layout)
+        vbox.addWidget(self.tabs)
 
         # This button determines the start of range of measurements
         self.start_button = QtWidgets.QDoubleSpinBox()
@@ -149,22 +179,62 @@ class UserInterface(QtWidgets.QMainWindow):
     def plot(self):
         """This function plots the data from the measurements
         """
-        self.plot_widget.clear()
-        self.plot_widget.plot(
-            self.device.U_led, self.device.I, symbol="o", symbolSize=5, pen=None,
+        self.plot_widget_PR.clear()
+        self.plot_widget_PR.plot(
+            self.device.powers,
+            self.device.R,
+            symbol="o",
+            symbolSize=5,
+            pen=None,
+            xlim=10,
         )
-        self.plot_widget.setLabel("left", "current(I)")
-        self.plot_widget.setLabel("bottom", "voltage(U)")
+        self.plot_widget_PR.setYRange(0, 1000)
+        self.plot_widget_PR.setXRange(0, 1)
+        self.plot_widget_PR.setLabel("left", "power(W)")
+        self.plot_widget_PR.setLabel("bottom", "resistance(Ohm)")
 
-        width = 2 * np.array(self.device.error_U_led_list)
-        print(width)
-        height = 2 * np.array(self.device.error_I_mean_list)
+        width_PR = 2 * np.array(self.device.error_R)
+        height_PR = 2 * np.array(self.device.error_power)
 
         # plotting errors
-        x = np.array(self.device.U_led)
-        y = np.array(self.device.I)
-        error_bars = pg.ErrorBarItem(x=x, y=y, width=width, height=height)
-        self.plot_widget.addItem(error_bars)
+        x_PR = np.array(self.device.powers)
+        y_PR = np.array(self.device.R)
+        error_bars = pg.ErrorBarItem(x=x_PR, y=y_PR, width=width_PR, height=height_PR)
+        self.plot_widget_PR.addItem(error_bars)
+
+        self.plot_widget_UI.clear()
+        self.plot_widget_UI.plot(
+            self.device.U_led, self.device.I, symbol="o", symbolSize=5, pen=None,
+        )
+        self.plot_widget_UI.setYRange(0, 0.02)
+        self.plot_widget_UI.setLabel("left", "current(I)")
+        self.plot_widget_UI.setLabel("bottom", "voltage(U)")
+
+        width_UI = 2 * np.array(self.device.error_U_led_list)
+        height_UI = 2 * np.array(self.device.error_I_mean_list)
+
+        # plotting errors
+        x_UI = np.array(self.device.U_led)
+        y_UI = np.array(self.device.I)
+        error_bars = pg.ErrorBarItem(x=x_UI, y=y_UI, width=width_UI, height=height_UI)
+        self.plot_widget_UI.addItem(error_bars)
+
+        self.plot_widget_UU.clear()
+        self.plot_widget_UU.plot(
+            self.device.vch0, self.device.U_led, symbol="o", symbolSize=5, pen=None,
+        )
+
+        self.plot_widget_UU.setLabel("left", "voltage_sun(U)")
+        self.plot_widget_UU.setLabel("bottom", "voltage_channel0(U)")
+
+        height_UU = 2 * np.array(self.device.error_U_led_list)
+        width_UU = 2 * np.array(self.device.err_ch0)
+
+        # plotting errors
+        x_UU = np.array(self.device.vch0)
+        y_UU = np.array(self.device.U_led)
+        error_bars = pg.ErrorBarItem(x=x_UU, y=y_UU, witdh=width_UU, height=height_UU)
+        self.plot_widget_UU.addItem(error_bars)
 
     def shut(self):
         """Closes the window
